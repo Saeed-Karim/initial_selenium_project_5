@@ -17,4 +17,10 @@ public class TechGlobalUtil {
         driver.findElement(By.id("frontend-option")).click();
         Waiter.pause(1);
     }
+
+    public static void clickOnCard(int cardNumber){
+        WebDriver driver = Driver.getDriver();
+        driver.findElement(By.id("card-" + cardNumber)).click();
+    }
+
 }
